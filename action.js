@@ -5,12 +5,10 @@ var studente1 = {
   "nome" : "Marco",
   "cognome" : "Pesucci",
   "età" : 21
-}
+};
 
-for (var key in studente1) {
-// codice da eseguire
-// key prima sarà “prezzo” poi “tipo”
-console.log(studente1[key])
+for (var lista in studente1) {
+console.log(lista + "=" + studente1[lista])
 }
 
 // console.log(studente1.nome + " è il nome del primo studente" );
@@ -43,7 +41,7 @@ console.log("I cognomi degli studenti sono " + studente1.cognome + " " + student
 // - Dare la possibilità all’utente attraverso 3 prompt di
 // aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
 
-
+var studente4;
 var nomeNuovoStud = prompt("Inserisci il nome del nuovo studente");
 var cognomeNuovoStud = prompt("Inserisci il cognome del nuovo studente");
 var etaNuovoStud = parseInt(prompt("Inserisci l'età del nuovo studente"));
@@ -52,4 +50,4 @@ var etaNuovoStud = parseInt(prompt("Inserisci l'età del nuovo studente"));
 studente4.push(cognomeNuovoStud.nome);
 studenti.push(studente4);
 
-console.log(studenti);
+console.log(studente4);

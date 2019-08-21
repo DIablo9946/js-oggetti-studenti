@@ -42,3 +42,14 @@ console.log("I cognomi degli studenti sono " + studente1.cognome + " " + student
 
 // - Dare la possibilità all’utente attraverso 3 prompt di
 // aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
+
+
+var nomeNuovoStud = prompt("Inserisci il nome del nuovo studente");
+var cognomeNuovoStud = prompt("Inserisci il cognome del nuovo studente");
+var etaNuovoStud = parseInt(prompt("Inserisci l'età del nuovo studente"));
+
+
+studente4.push(cognomeNuovoStud.nome);
+studenti.push(studente4);
+
+console.log(studenti);

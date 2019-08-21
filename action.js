@@ -16,27 +16,16 @@ console.log(lista + "=" + studente1[lista])
 // - Creare un array di oggetti di studenti. Ciclare su tutti gli studenti
 //  e stampare per ognuno nome e cognome
 
+var studenti = [
+  {"nome" : "Marco", "cognome" : "Pesucci", "età" : 21},
+  {"nome" : "Paolo", "cognome" : "Tangetti", "età" : 28},
+  {"nome" : "Alberto", "cognome" : "Carrara", "età" : 25},
+  {"nome" : "Eugenio", "cognome" : "Meo", "età" : 33}
+]
 
-
-var studente2 = {
-  "nome" : "Paolo",
-  "cognome" : "Carletti",
-  "età" : 25
+for (var i = 0; i < studenti.length; i++) {
+  console.log(studenti[i].nome + " " +  studenti[i].cognome);
 }
-
-var studente3 = {
-  "nome" : "Simone",
-  "cognome" : "Parroco",
-  "età" : 33
-}
-
-var studenti = [studente1, studente2, studente3];
-
-console.log("I nomi degli studenti sono " + studente1.nome + " " + studente2.nome + " " + studente3.nome);
-console.log("I cognomi degli studenti sono " + studente1.cognome + " " + studente2.cognome + " " + studente3.cognome);
-
-
-
 
 // - Dare la possibilità all’utente attraverso 3 prompt di
 // aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
